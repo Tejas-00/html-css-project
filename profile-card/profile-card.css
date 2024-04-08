@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    font-family: "Poppins", sans-serif;
+}
+
+.profile-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    max-width: 370px;
+    width: 100%;
+    border-radius: 24px;
+    padding: 25px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.profile-card::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 36%;
+    width: 100%;
+    border-radius: 24px 24px 0 0;
+    background-color: #4070f4;
+}
+
+.img-container{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.img-container .profile-pic{
+    width: 100%;
+    height: 100%;
+    border: 3px solid white;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user-name{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.user-description{
+    font-size: 15px;
+    color: rgb(106, 106, 106);
+    margin-bottom: 15px;
+}
+
+.social-media-platforms{
+    display: flex;
+    flex-direction: row;
+    width: 1fr;
+}
+
+.facebook,
+.instagram,
+.X,
+.youtube{
+    width: 22px;
+    justify-content: space-between;
+    margin: 0 8px;
+}
+
+.social-media-icons{
+    width: 100%;
+}
+
+.buttons-container{
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+    justify-content: center;
+    
+    margin-top: 16px;
+    gap: 25px;
+}
+
+.buttons-container .subscribe-button,
+.buttons-container .message-button{
+    background-color: #4070f4;
+    color: white;
+    padding: 4px 20px;
+    border-style: none;
+    border-radius: 14px;
+    font-size: 14px;
+    margin-bottom: 25px;
+    cursor: pointer;
+    transition: opacity 0.15s;
+}
+
+.subscribe-button:hover,
+.message-button:hover{
+    opacity: 0.9;
+}
+
+.like-comment-share{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 100px;
+}
+ 
+.like-icon-container,
+.comment-icon-container,
+.share-icon-container{
+    width: 20px;
+}
+
+.like-icon,
+.comment-icon,
+.share-icon{
+    width: 100%;
+}
